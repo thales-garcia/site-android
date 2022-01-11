@@ -31,6 +31,10 @@ body{
     font-family: var(--fonte-padrao);
 }
 
+a.externo::after{
+    content: '\00A0\1F517';
+}
+
 main p{
     margin: 15px 0px;
     text-align: justify;
@@ -61,6 +65,8 @@ main a:hover{
 main h1{
     font-family: var(--fonte-android);
     color: var(--cor5);
+    font-weight: normal;
+    font-size: 1.8em;
 }
 
 main h2{
@@ -69,6 +75,7 @@ main h2{
     font-size: 1.3em;
     background-image: linear-gradient(90deg, var(--cor1), transparent);
     padding-left: 10px;
+    font-weight: normal;
 }
 
 main{
@@ -100,6 +107,7 @@ header > h1{
     font-size: 3em;
     color: white;
     text-shadow: 5px 2px 0px rgb(0 0 0 / 39%);
+    font-weight: normal;
 }
 
 header > p{
@@ -144,9 +152,58 @@ img.pequena{
     display: block;
 }
 
+div.video{
+    background-color: var(--cor5);
+    margin: 0px -40px 30px -40px;
+    padding: 20px;
+    padding-bottom: 59%;
+    position: relative;
+}
+
+div.video > iframe{
+    position: absolute;
+    top:5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside{
+    background-color: var(--cor1);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.377);
+}
+
+aside ul{
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+
+}
+
+aside > h3{
+    background-color: var(--cor4);
+    color: white;
+    padding: 10px;
+    margin: -15px -15px 0px -15px;
+    border-radius: 10px 10px 0px 0px;
+    font-family: var(--fonte-padrao)
+}
+
+
 footer{
     background-color: var(--cor5);
     color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+footer a{
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
 }
 
 
